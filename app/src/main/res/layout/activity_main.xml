@@ -29,7 +29,7 @@
         android:id="@+id/textIsi1"
         android:layout_width="356dp"
         android:layout_height="111dp"
-        android:text="Game Pedia merupakan sebuah Aplikasi yang berisi tentang info game terbaru dan harga game tersbut"
+        android:text="GamePedia merupakan sebuah Aplikasi yang berisi tentang info game terbaru dan harga game tersbut"
         android:textColor="#FFFFFF"
         android:textSize="18dp"
         android:textStyle="bold"
