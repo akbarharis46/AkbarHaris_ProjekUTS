@@ -6,12 +6,31 @@ import android.os.Parcelable;
 public class Game implements Parcelable {
     private String nama_game;
     private String detail_game;
-    private int photo;
+    private String photo;
     private String harga;
 
     public Game() {
 
     }
+
+    protected Game(Parcel in) {
+        nama_game = in.readString();
+        detail_game = in.readString();
+        photo = in.readString();
+        harga = in.readString();
+    }
+
+    public static final Creator<Game> CREATOR = new Creator<Game>() {
+        @Override
+        public Game createFromParcel(Parcel in) {
+            return new Game(in);
+        }
+
+        @Override
+        public Game[] newArray(int size) {
+            return new Game[size];
+        }
+    };
 
     public String getNama_game() {
         return nama_game;
@@ -29,11 +48,11 @@ public class Game implements Parcelable {
         this.detail_game = detail_game;
     }
 
-    public int getPhoto() {
+    public String getPhoto() {
         return photo;
     }
 
-    public void setPhoto(int photo) {
+    public void setPhoto(String photo) {
         this.photo = photo;
     }
 
@@ -45,37 +64,16 @@ public class Game implements Parcelable {
         this.harga = harga;
     }
 
-
-
     @Override
     public int describeContents() {
         return 0;
     }
 
     @Override
-    public void writeToParcel(Parcel parcel, int i) {
-        parcel.writeString(nama_game);
-        parcel.writeString(detail_game);
-        parcel.writeInt(photo);
-        parcel.writeString(harga);
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(nama_game);
+        dest.writeString(detail_game);
+        dest.writeString(photo);
+        dest.writeString(harga);
     }
-
-    protected Game(Parcel in) {
-        nama_game = in.readString();
-        detail_game = in.readString();
-        photo = in.readInt();
-        harga = in.readString();
-    }
-
-    public static final Creator<Game> CREATOR = new Creator<Game>() {
-        @Override
-        public Game createFromParcel(Parcel in) {
-            return new Game(in);
-        }
-
-        @Override
-        public Game[] newArray(int size) {
-            return new Game[size];
-        }
-    };
 }

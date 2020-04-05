@@ -20,7 +20,6 @@ import java.util.ArrayList;
 public class ListGameAdapter extends RecyclerView.Adapter<ListGameAdapter.ListViewHolder> {
 
     private final ArrayList<Game> listGame;
-
     private OnItemClickCallback onItemClickCallback;
 
     public void setOnItemClickCallback(OnItemClickCallback onItemClickCallback) {

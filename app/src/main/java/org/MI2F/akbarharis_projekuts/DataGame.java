@@ -29,11 +29,12 @@ public class DataGame {
 
     };
 
-    private static int[] gambarGame = {
-            R.drawable.gtav,
-            R.drawable.pubg,
-            R.drawable.battlefield,
-            R.drawable.csgo,
+    private static String[] gambarGame = {
+            "https://upload.wikimedia.org/wikipedia/commons/c/c1/GTA_V_logo.png",
+            "https://upload.wikimedia.org/wikipedia/commons/c/c1/GTA_V_logo.png",
+            "https://upload.wikimedia.org/wikipedia/commons/c/c1/GTA_V_logo.png",
+            "https://upload.wikimedia.org/wikipedia/commons/c/c1/GTA_V_logo.png",
+
     };
 
     static ArrayList<Game> getListData() {
