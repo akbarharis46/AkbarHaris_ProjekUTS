@@ -33,7 +33,7 @@ public class ListGameAdapter extends RecyclerView.Adapter<ListGameAdapter.ListVi
     @NonNull
     @Override
     public ListViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-        View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.item_game, viewGroup, false);
+        View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.rycle_game, viewGroup, false);
         return new ListViewHolder(view);
     }
 
@@ -70,7 +70,7 @@ public class ListGameAdapter extends RecyclerView.Adapter<ListGameAdapter.ListVi
             super(itemView);
             imgPhoto = itemView.findViewById(R.id.img_item_photo);
             tvName = itemView.findViewById(R.id.tv_item_name);
-            tvDetail = itemView.findViewById(R.id.tv_detail_game);
+            tvDetail = itemView.findViewById(R.id.tv_item_detail);
         }
     }
 }

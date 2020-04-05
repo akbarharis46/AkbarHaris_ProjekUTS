@@ -4,8 +4,8 @@ import android.os.Parcel;
 import android.os.Parcelable;
 
 public class Game implements Parcelable {
-    private  String nama_game;
-    private  String detail_game;
+    private String nama_game;
+    private String detail_game;
     private int photo;
     private String harga;
 
@@ -47,6 +47,19 @@ public class Game implements Parcelable {
 
 
 
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel parcel, int i) {
+        parcel.writeString(nama_game);
+        parcel.writeString(detail_game);
+        parcel.writeInt(photo);
+        parcel.writeString(harga);
+    }
+
     protected Game(Parcel in) {
         nama_game = in.readString();
         detail_game = in.readString();
@@ -65,19 +78,4 @@ public class Game implements Parcelable {
             return new Game[size];
         }
     };
-
-
-
-    @Override
-    public int describeContents() {
-        return 0;
-    }
-
-    @Override
-    public void writeToParcel(Parcel dest, int flags) {
-        dest.writeString(nama_game);
-        dest.writeString(detail_game);
-        dest.writeInt(photo);
-        dest.writeString(harga);
-    }
 }

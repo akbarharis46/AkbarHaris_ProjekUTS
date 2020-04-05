@@ -11,7 +11,6 @@ import com.bumptech.glide.Glide;
 public class DetailGame extends AppCompatActivity {
 
     public static final String ITEM_EXTRA = "item_extra";
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,7 +33,7 @@ public class DetailGame extends AppCompatActivity {
         }
 
         if (getSupportActionBar() != null) {
-            getSupportActionBar().setTitle("Detail Makanan");
+            getSupportActionBar().setTitle("Detail Game");
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
 

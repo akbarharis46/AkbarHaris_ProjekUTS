@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void mencoba(View view) {
-        Intent intent =  new Intent(this, mainDataGame.class);
+        Intent intent = new Intent(this, HomeGame.class);
         startActivity(intent);
     }
 }

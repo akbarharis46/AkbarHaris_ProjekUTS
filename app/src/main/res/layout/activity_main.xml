@@ -4,48 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#020B11"
     tools:context=".MainActivity">
 
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="-2dp"
-        android:layout_marginBottom="308dp"
-        android:background="@drawable/logopedia" />
-
     <TextView
-        android:id="@+id/textIsi1"
-        android:layout_width="356dp"
-        android:layout_height="111dp"
-        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="174dp"
-        android:text="GamePedia merupakan sebuah Aplikasi yang berisi tentang info game terbaru dan harga game tersbut"
-        android:textColor="#FFFFFF"
-        android:textSize="18dp"
-        android:textStyle="bold" />
+        android:layout_marginTop="276dp"
+        android:text="Hello World!" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="172dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="73dp"
-        android:text="Lest Start"
-        android:onClick="mencoba"/>
-
+        android:layout_centerInParent="true"
+        android:onClick="mencoba"
+        android:text="Button" />
 
 </RelativeLayout>
